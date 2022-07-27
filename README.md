@@ -1,4 +1,4 @@
-# portfolio-project
+# Basic Vue Application using most features that Vue gives us like routes.
 
 ## Project setup
 ```
