@@ -9,7 +9,8 @@ export default {
   name: "TeamsList",
   components:{
     TeamsItem
-  }
+  },
+  inject:['teams']
 }
 </script>
 
