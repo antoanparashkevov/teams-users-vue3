@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <button>Teams</button>
+          <button @click="setActivePage('teams-list')">Teams</button>
         </li>
         <li>
-          <button>Users</button>
+          <button @click="setActivePage('users-list')">Users</button>
         </li>
       </ul>
     </nav>
@@ -15,7 +15,13 @@
 
 <script>
 export default {
-  name: "TheNavigation"
+  emits:['set-page'],
+  name: "TheNavigation",
+  methods:{
+    setActivePage(page){
+      this.$emit('set-page',page)
+    }
+  }
 }
 </script>
 

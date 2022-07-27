@@ -1,5 +1,5 @@
 <template>
-  <the-navigation></the-navigation>
+  <the-navigation @set-page="setActivePage"></the-navigation>
   <main>
   <component :is="activePage"></component>
   </main>
@@ -20,6 +20,11 @@ export default {
   data(){
     return {
       activePage:'teams-list'
+    }
+  },
+  methods:{
+    setActivePage(page){
+      this.activePage = page;
     }
   }
 
