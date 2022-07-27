@@ -1,15 +1,28 @@
 <template>
   <the-navigation></the-navigation>
+  <main>
+  <component :is="activePage"></component>
+  </main>
 </template>
 
 <script>
+import TeamsList from "@/components/teams/TeamsList";
+import UsersList from "@/components/users/UsersList";
 import TheNavigation from "@/components/nav/TheNavigation";
 
 export default {
   name: 'App',
   components: {
-    TheNavigation
+    TheNavigation,
+    TeamsList,
+    UsersList
+  },
+  data(){
+    return {
+      activePage:'teams-list'
+    }
   }
+
 }
 </script>
 
