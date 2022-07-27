@@ -1,6 +1,7 @@
 <template>
-  <h1>UsersList</h1>
-  <user-item></user-item>
+  <ul>
+    <user-item v-for="user in users" :key="user.id" :name="user.fullName" :role="user.role"></user-item>
+  </ul>
 </template>
 
 <script>
@@ -10,10 +11,16 @@ export default {
   name: "UsersList",
   components: {
     UserItem
-  }
+  },
+  inject:['users']
 }
 </script>
 
 <style scoped>
-
+ul {
+  list-style: none;
+  margin: 2rem auto;
+  max-width: 20rem;
+  padding: 0;
+}
 </style>
