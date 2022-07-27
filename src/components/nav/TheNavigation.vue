@@ -3,7 +3,7 @@
     <nav>
       <ul>
         <li>
-<!--          router-link is like an anchor tag but prevents the Browser Default behaviour-->
+          <!--          router-link is like an anchor tag but prevents the Browser Default behaviour-->
           <router-link to="/teams">Teams</router-link>
         </li>
         <li>
@@ -16,15 +16,16 @@
 
 <style scoped>
 header {
-  width:100%;
+  width: 100%;
   height: 5rem;
   background-color: #11005c;
 }
 
-nav{
+nav {
   height: 100%;
 }
-ul{
+
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -34,21 +35,23 @@ ul{
   align-items: center;
 }
 
-li{
+li {
   margin: 0 2rem;
 }
+
 a {
   text-decoration: none;
   background: transparent;
   border: 1px solid transparent;
   cursor: pointer;
   color: white;
-  padding:0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   display: inline-block;
 }
+
 a:hover,
 a:active,
-a.active{
+a.active {
   color: #f1a80a;
   border-color: #f1a80a;
   background-color: #1a037e;
