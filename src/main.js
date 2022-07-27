@@ -2,13 +2,18 @@ import {createApp} from 'vue'
 import {createRouter, createWebHistory} from "vue-router";
 import TeamsList from "@/components/teams/TeamsList";
 import UsersList from "@/components/users/UsersList";
+import TeamMembers from "@/components/teams/TeamMembers";
+
 import App from './App.vue'
 
 const router = createRouter({
     history: createWebHistory(),
     routes: [
         {path: '/teams', component: TeamsList},//our-domain.com/teams TeamsList
-        {path: '/users', component: UsersList}//our-domain.com/users UsersList
+        {path: '/users', component: UsersList},//our-domain.com/users UsersList
+
+        {path:'/teams/:teamsId',component: TeamMembers}//our-domain.com/teams/anything
+        //using a dynamic route parameter for individual team
     ],
     //overwrite the active class for router-link tag
     linkActiveClass:'active'
