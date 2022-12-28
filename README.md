@@ -1,24 +1,10 @@
-# Basic Vue Application using most features that Vue gives us like routes.
 
-## Project setup
-```
-npm install
-```
+# Team Users Vue3 Routing
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Development server
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Run `npm run dev` for a dev server. Navigate to `http://localhost:3030/`. The application will automatically reload if you change any of the source files.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Purpose
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+How to create an awesome Single-Page-Application (SPA) with Routing. Of course with Vue 3 :)
